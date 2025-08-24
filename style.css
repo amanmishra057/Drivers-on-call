@@ -1,0 +1,16 @@
+/*
+  Styles for the scroll-in animation.
+  - 'animate-on-scroll' is the class we add to sections we want to animate.
+  - Initially, they are transparent and shifted down.
+  - The 'visible' class is added by JavaScript to trigger the transition.
+*/
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - DriversOnCall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        .logo-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=300&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 12px 24px;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(37, 99, 235, 0.9), rgba(59, 130, 246, 0.9));
+            border-radius: 10px;
+            z-index: 0;
+        }
+
+        .logo-text {
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <span class="logo-text">DriversOnCall</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="services.html" class="text-blue-600 font-semibold">Services</a>
+                <a href="fleet.html" class="text-gray-600 hover:text-blue-600">Our Fleet</a>
+                <a href="index.html#faq" class="text-gray-600 hover:text-blue-600">FAQ</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+            <a href="index.html#contact" class="hidden md:inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700">Book Now</a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+             <a href="index.html" class="block text-gray-600 hover:text-blue-600">Home</a>
+             <a href="services.html" class="block text-blue-600 font-semibold">Services</a>
+             <a href="fleet.html" class="block text-gray-600 hover:text-blue-600">Our Fleet</a>
+             <a href="index.html#faq" class="block text-gray-600 hover:text-blue-600">FAQ</a>
+             <a href="index.html#contact" class="block text-gray-600 hover:text-blue-600">Contact</a>
+             <a href="index.html#contact" class="block bg-blue-600 text-white text-center font-semibold mt-4 px-6 py-2 rounded-lg">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gray-700 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold">Our Professional Driver Services</h1>
+                <p class="text-lg mt-2">Flexible, reliable, and safe driving solutions for all your needs.</p>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 animate-on-scroll">
+            <div class="container mx-auto px-6 space-y-16">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2"><img src="https://placehold.co/600x400/3498db/ffffff?text=Outstation+Trip" alt="Outstation Trip" class="rounded-lg shadow-lg"></div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold mb-3">City & Outstation Trips</h2>
+                        <p class="text-gray-600 mb-4">Whether you need a driver for a quick ride across town or a multi-day trip to another city, we have you covered. Our experienced drivers are familiar with local and long-distance routes, ensuring a smooth and punctual journey.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Safe and comfortable travel for families and individuals.</li>
+                            <li>On-time airport transfers and railway station pickups.</li>
+                            <li>Perfect for weekend getaways and holiday travel.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2"><img src="https://placehold.co/600x400/2ecc71/ffffff?text=Corporate+Service" alt="Corporate Service" class="rounded-lg shadow-lg"></div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold mb-3">Corporate Driver Service</h2>
+                        <p class="text-gray-600 mb-4">Impress your clients and ensure your executives travel in style and comfort. Our professional, uniformed drivers are trained in corporate etiquette and prioritize discretion and punctuality for all your business needs.</p>
+                         <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Reliable travel for business meetings and conferences.</li>
+                            <li>Professional client and guest transportation.</li>
+                            <li>Monthly or long-term contracts available.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-16 md:py-24 bg-white animate-on-scroll">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Pricing</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Transparent and competitive pricing plans. No hidden charges.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="border-2 border-blue-500 rounded-lg p-8 text-center flex flex-col shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Hourly Package</h3>
+                        <p class="text-gray-500 mb-4">For short trips & errands</p>
+                        <p class="text-4xl font-bold my-4">₹200<span class="text-lg font-medium text-gray-600">/hour</span></p>
+                        <ul class="space-y-3 text-gray-700 mb-6 flex-grow">
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Minimum 4 hours booking</li>
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Ideal for city travel</li>
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Professional verified driver</li>
+                        </ul>
+                        <a href="index.html#contact" class="mt-auto bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Hire Now</a>
+                    </div>
+                    <div class="border rounded-lg p-8 text-center flex flex-col shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Full Day</h3>
+                        <p class="text-gray-500 mb-4">8 hours / 80 Kms</p>
+                        <p class="text-4xl font-bold my-4">₹1200<span class="text-lg font-medium text-gray-600">/day</span></p>
+                        <ul class="space-y-3 text-gray-700 mb-6 flex-grow">
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>8 hours duty included</li>
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Up to 80 Kms travel</li>
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Overtime charges apply</li>
+                        </ul>
+                        <a href="index.html#contact" class="mt-auto bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors">Hire Now</a>
+                    </div>
+                    <div class="border rounded-lg p-8 text-center flex flex-col shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Outstation</h3>
+                        <p class="text-gray-500 mb-4">For inter-city travel</p>
+                        <p class="text-4xl font-bold my-4">Call Us</p>
+                        <ul class="space-y-3 text-gray-700 mb-6 flex-grow">
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Round trips & one-way</li>
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Driver's allowance applicable</li>
+                           <li class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Customized quotes</li>
+                        </ul>
+                        <a href="index.html#contact" class="mt-auto bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 animate-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Outstation Trip Image Box -->
+            <div class="relative h-[400px] rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1532939163844-547f958e91b4?auto=format&fit=crop&w=800&q=80" 
+                     alt="Outstation Travel Service" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 flex flex-col justify-end p-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">Outstation Travel</h3>
+                    <p class="text-white/90 mb-4">Professional drivers for your intercity journeys. Safe and comfortable travel guaranteed.</p>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors w-fit">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Corporate Service Image Box -->
+            <div class="relative h-[400px] rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=800&q=80" 
+                     alt="Corporate Service" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 flex flex-col justify-end p-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">Corporate Service</h3>
+                    <p class="text-white/90 mb-4">Premium driver services for business executives. Punctual and professional.</p>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors w-fit">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="bg-blue-600 text-white">
+            <div class="container mx-auto px-6 py-12 text-center">
+                <h2 class="text-3xl font-bold">Ready to Ride in Comfort?</h2>
+                <p class="mt-2 mb-6">Get a professional driver today. It's simple, fast, and reliable.</p>
+                <a href="index.html#contact" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Book a Driver Now</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-gray-900 text-gray-300">
+         <div class="container mx-auto px-6 py-12"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
